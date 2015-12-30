@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyDemo</string>
+    <string name="action_settings">Settings</string>
+
+
+    <array name="model_name">
+        <item>Tab Host</item>
+        <item>Volly</item>
+        <item>HelloWorld</item>
+        <item></item>
+    </array>
+    <string name="title_activity_tab_host_demo">TabHostDemoActivity</string>
+</resources>
