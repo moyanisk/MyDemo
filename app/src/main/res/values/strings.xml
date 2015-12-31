@@ -7,7 +7,11 @@
         <item>Tab Host</item>
         <item>Volly</item>
         <item>HelloWorld</item>
-        <item></item>
     </array>
     <string name="title_activity_tab_host_demo">TabHostDemoActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="first_fragment">First fragment</string>
+    <string name="secend_fragment">Secend fragment</string>
+    <string name="three_fragment">Three fragment</string>
 </resources>
