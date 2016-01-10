@@ -6,7 +6,8 @@
     <array name="model_name">
         <item>Tab Host</item>
         <item>Volly</item>
-        <item>HelloWorld</item>
+        <item>DrawerLayout Demo</item>
+        <item>Bitmap compress</item>
     </array>
     <string name="title_activity_tab_host_demo">TabHostDemoActivity</string>
 
@@ -14,4 +15,9 @@
     <string name="first_fragment">First fragment</string>
     <string name="secend_fragment">Secend fragment</string>
     <string name="three_fragment">Three fragment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bitmap_compress_demo">BitmapCompressDemoActivity</string>
 </resources>

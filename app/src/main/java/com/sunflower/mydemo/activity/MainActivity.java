@@ -61,8 +61,13 @@ public class MainActivity extends AppCompatActivity {
                         intent.setClass(MainActivity.this,TabHostDemoActivity.class);
                         break;
                     case 1:
+                        intent.setClass(MainActivity.this,TabHostDemoActivity.class);
                         break;
                     case 2:
+                        intent.setClass(MainActivity.this,DrawerLayoutDemoActivity.class);
+                        break;
+                    case 3:
+                        intent.setClass(MainActivity.this,BitmapCompressDemoActivity.class);
                         break;
                 }
 
