@@ -2,19 +2,23 @@
     <string name="app_name">MyDemo</string>
     <string name="action_settings">Settings</string>
 
-
+    <!--示例模块名字 -->
     <array name="model_name">
         <item>Tab Host</item>
         <item>Volly</item>
         <item>DrawerLayout Demo</item>
-        <item>Bitmap compress</item>
+        <item>Bitmap Compress</item>
     </array>
+
+    
     <string name="title_activity_tab_host_demo">TabHostDemoActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="first_fragment">First fragment</string>
     <string name="secend_fragment">Secend fragment</string>
     <string name="three_fragment">Three fragment</string>
+    
+    <string name="load_image_button">加载图片</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
