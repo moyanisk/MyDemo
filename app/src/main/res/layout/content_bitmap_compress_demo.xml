@@ -13,12 +13,22 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.sunflower.mydemo.activity.BitmapCompressDemoActivity"
     tools:showIn="@layout/activity_bitmap_compress_demo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_load_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_image_button"/>
 
-    <Button
-        android:id="@+id/btn_load_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/load_image_button"/>
+        <Button
+            android:id="@+id/btn_photograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photograph_button"/>
+    </LinearLayout>
+
 
     <ImageView
         android:id="@+id/iv_imageview"

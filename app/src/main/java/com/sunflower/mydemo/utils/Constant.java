@@ -18,4 +18,6 @@ public class Constant {
     public static final String IMAGECACHE= Environment.getExternalStorageDirectory()+ File.separator+Constant.fileDir+File.separator+"imagecaChe";
 
 
+//    Constant.SAVED_IMAGE_DIR_PATH
+
 }

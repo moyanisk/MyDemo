@@ -43,14 +43,14 @@ public class BitmapUtils {
      * @param photo
      * @param spath
      */
-    public static void saveImage(Bitmap photo, String spath) {
+    public static void saveImage(Bitmap photo, String path) {
         try {
-            File file = new File(spath);
+            File file = new File(path);
             if (!file.exists()) {
                 file.createNewFile();
             }
             BufferedOutputStream bos = new BufferedOutputStream(
-                    new FileOutputStream(spath, false));
+                    new FileOutputStream(path, false));
             photo.compress(Bitmap.CompressFormat.JPEG, 100, bos);
             bos.flush();
             bos.close();
