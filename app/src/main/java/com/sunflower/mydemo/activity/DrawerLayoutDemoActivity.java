@@ -10,7 +10,7 @@ import com.sunflower.mydemo.fragment.DrawerFragment;
 
 public class DrawerLayoutDemoActivity extends AppCompatActivity {
 
-    private DrawerLayout mDrawerLayout;
+    private DrawerLayout dl_drawerlayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class DrawerLayoutDemoActivity extends AppCompatActivity {
     }
 
     private void init () {
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.dl_drawerlayout);
+        dl_drawerlayout = (DrawerLayout) findViewById(R.id.dl_drawerlayout);
 
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.fl_drawer,new DrawerFragment()).commit();

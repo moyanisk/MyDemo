@@ -27,7 +27,7 @@ import java.io.File;
  */
 public class BitmapCompressDemoActivity extends AppCompatActivity {
 
-    private ImageView mIvImageView;
+    private ImageView iv_imageview;
     private Bitmap mBitmap;
     private String mCapturePath;
 
@@ -41,7 +41,7 @@ public class BitmapCompressDemoActivity extends AppCompatActivity {
 
     private void init () {
         Button btnLoadImage = (Button) findViewById(R.id.btn_load_image);
-        mIvImageView = (ImageView) findViewById(R.id.iv_imageview);
+        iv_imageview = (ImageView) findViewById(R.id.iv_imageview);
         btnLoadImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +85,7 @@ public class BitmapCompressDemoActivity extends AppCompatActivity {
             mCapturePath = Constant.IMAGECACHE + File.separator + System.currentTimeMillis() + ".jpg";
 
             getImageByCamera.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(mCapturePath)));
-            startActivityForResult(getImageByCamera, Constant.REQUEST_CODE_CAPTURE_CAMEIA);
+            startActivityForResult(getImageByCamera, Constant.REQUEST_CODE_CAPTURE_CAMERA);
         }
         else {
             Toast.makeText(getApplicationContext(), "请确认已经插入SD卡", Toast.LENGTH_LONG).show();
@@ -103,7 +103,7 @@ public class BitmapCompressDemoActivity extends AppCompatActivity {
             if (uri != null) {
                 mBitmap = BitmapUtils.getBitmapCompressFromFile(uri.toString().substring(7),800,600);
 
-                mIvImageView.setImageBitmap(mBitmap);
+                iv_imageview.setImageBitmap(mBitmap);
 
 //                String filepath = Constant.IMAGECACHE+ File.separator + AppUtils.createName(System.currentTimeMillis())+"."+"jpg";
 //                BitmapUtils.saveImage(bitmap,filepath);
@@ -112,11 +112,11 @@ public class BitmapCompressDemoActivity extends AppCompatActivity {
 //                }
 
             }
-        } else if (requestCode == Constant.REQUEST_CODE_CAPTURE_CAMEIA) {
+        } else if (requestCode == Constant.REQUEST_CODE_CAPTURE_CAMERA) {
 
 //            存放到指定的文件
                 mBitmap = BitmapUtils.getBitmapCompressFromFile(mCapturePath,800,600);
-                mIvImageView.setImageBitmap(mBitmap);
+                iv_imageview.setImageBitmap(mBitmap);
 
 
 
@@ -128,7 +128,7 @@ public class BitmapCompressDemoActivity extends AppCompatActivity {
                 if (bundle != null) {
                     Bitmap  photo = (Bitmap) bundle.get("data"); //get bitmap
                     //spath :生成图片取个名字和路径包含类型
-                    mIvImageView.setImageBitmap(photo);
+                    iv_imageview.setImageBitmap(photo);
                     String filepath = Constant.IMAGECACHE+ File.separator + AppUtils.createName(System.currentTimeMillis())+"."+"jpg";
                     BitmapUtils.saveImage(photo,filepath);
                 } else {

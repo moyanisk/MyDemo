@@ -46,9 +46,7 @@ public class BitmapUtils {
     public static void saveImage(Bitmap photo, String path) {
         try {
             File file = new File(path);
-            if (!file.exists()) {
-                file.createNewFile();
-            }
+            file.createNewFile();
             BufferedOutputStream bos = new BufferedOutputStream(
                     new FileOutputStream(path, false));
             photo.compress(Bitmap.CompressFormat.JPEG, 100, bos);

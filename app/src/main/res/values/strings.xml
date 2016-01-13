@@ -10,14 +10,14 @@
         <item>Bitmap Compress</item>
     </array>
 
-    
+
     <string name="title_activity_tab_host_demo">TabHostDemoActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="first_fragment">First fragment</string>
     <string name="secend_fragment">Secend fragment</string>
     <string name="three_fragment">Three fragment</string>
-    
+
     <string name="load_image_button">加载图片</string>
     <string name="photograph_button">拍照</string>
 

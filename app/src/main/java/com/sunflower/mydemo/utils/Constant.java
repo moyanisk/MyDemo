@@ -12,7 +12,7 @@ public class Constant {
     public static final String fileDir = "MyDemo";
 
     public static int REQUEST_CODE_PICK_IMAGE = 100;
-    public static int REQUEST_CODE_CAPTURE_CAMEIA = 101;
+    public static int REQUEST_CODE_CAPTURE_CAMERA = 101;
 
     //压缩图片存储路径
     public static final String IMAGECACHE= Environment.getExternalStorageDirectory()+ File.separator+Constant.fileDir+File.separator+"imagecaChe";
