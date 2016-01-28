@@ -5,9 +5,11 @@
     <!--示例模块名字 -->
     <array name="model_name">
         <item>Tab Host</item>
-        <item>Volly</item>
+        <item>Volley</item>
         <item>DrawerLayout Demo</item>
         <item>Bitmap Compress</item>
+        <item>23种常见设计模式示例</item>
+        <item>Material Design</item>
     </array>
 
 
