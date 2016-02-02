@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             new ActivityInfo("DrawerLayout Demo", DrawerLayoutDemoActivity.class),
             new ActivityInfo("Bitmap", BitmapCompressDemoActivity.class),
             new ActivityInfo("ViewPager", ViewPagerDemoActivity.class),
-            new ActivityInfo("Material Design", TabHostDemoActivity.class)
+            new ActivityInfo("Material Design", MaterialDesignDemoActivity.class)
     );
 
 
