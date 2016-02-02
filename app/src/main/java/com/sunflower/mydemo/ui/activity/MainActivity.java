@@ -1,4 +1,4 @@
-package com.sunflower.mydemo.activity;
+package com.sunflower.mydemo.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,20 +6,33 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.sunflower.mydemo.R;
+import com.sunflower.mydemo.model.ActivityInfo;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * create 2015/12/30
  * author xuefei
  */
 public class MainActivity extends AppCompatActivity {
+
+    private List<ActivityInfo> mData = Arrays.asList(
+            new ActivityInfo("Tab Host", TabHostDemoActivity.class),
+            new ActivityInfo("Volley", VolleyDemoActivity.class),
+            new ActivityInfo("DrawerLayout Demo", DrawerLayoutDemoActivity.class),
+            new ActivityInfo("Bitmap", BitmapCompressDemoActivity.class),
+            new ActivityInfo("ViewPager", ViewPagerDemoActivity.class),
+            new ActivityInfo("Material Design", TabHostDemoActivity.class)
+    );
 
 
     @Override
@@ -49,30 +62,16 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         String[] datas = getResources().getStringArray(R.array.model_name);
         ListView lv_listview = (ListView) findViewById(R.id.lv_listview);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,datas);
+        ArrayAdapter<ActivityInfo> arrayAdapter = new ArrayAdapter<ActivityInfo>(this, android.R.layout.simple_list_item_1, mData);
         lv_listview.setAdapter(arrayAdapter);
         lv_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                ActivityInfo activityInfo = mData.get(position);
                 Intent intent = new Intent();
-                switch (position) {
-                    case 0:
-                        intent.setClass(MainActivity.this,TabHostDemoActivity.class);
-                        break;
-                    case 1:
-                        intent.setClass(MainActivity.this,TabHostDemoActivity.class);
-                        break;
-                    case 2:
-                        intent.setClass(MainActivity.this,DrawerLayoutDemoActivity.class);
-                        break;
-                    case 3:
-                        intent.setClass(MainActivity.this,BitmapCompressDemoActivity.class);
-                        break;
-                }
-
+                intent.setClass(MainActivity.this, activityInfo.name);
                 startActivity(intent);
-
             }
         });
 

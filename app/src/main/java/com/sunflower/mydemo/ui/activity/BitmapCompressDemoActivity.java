@@ -1,4 +1,4 @@
-package com.sunflower.mydemo.activity;
+package com.sunflower.mydemo.ui.activity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.sunflower.mydemo.R;
-import com.sunflower.mydemo.utils.AppUtils;
 import com.sunflower.mydemo.utils.BitmapUtils;
 import com.sunflower.mydemo.utils.Constant;
 
