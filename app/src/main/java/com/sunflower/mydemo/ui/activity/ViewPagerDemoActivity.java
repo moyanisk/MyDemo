@@ -1,4 +1,4 @@
-package com.sunflower.mydemo.activity;
+package com.sunflower.mydemo.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,8 +19,6 @@ public class ViewPagerDemoActivity extends AppCompatActivity {
     }
 
     private void init () {
-
-
 
 
     }

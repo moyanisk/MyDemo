@@ -1,4 +1,4 @@
-package com.sunflower.mydemo.fragment;
+package com.sunflower.mydemo.ui.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;

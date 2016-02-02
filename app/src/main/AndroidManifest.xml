@@ -4,15 +4,17 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
+        android:name=".AppApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,17 +24,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.TabHostDemoActivity"
+            android:name=".ui.activity.TabHostDemoActivity"
             android:label="@string/title_activity_tab_host_demo"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".activity.DrawerLayoutDemoActivity"/>
+        <activity android:name=".ui.activity.DrawerLayoutDemoActivity"/>
         <activity
-            android:name=".activity.BitmapCompressDemoActivity"
+            android:name=".ui.activity.BitmapCompressDemoActivity"
             android:label="@string/title_activity_bitmap_compress_demo"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".activity.ViewPagerDemoActivity">
+        <activity android:name=".ui.activity.ViewPagerDemoActivity">
+        </activity>
+        <activity android:name=".ui.activity.VolleyDemoActivity">
         </activity>
     </application>
 

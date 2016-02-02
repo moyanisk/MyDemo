@@ -1,4 +1,4 @@
-package com.sunflower.mydemo.activity;
+package com.sunflower.mydemo.ui.activity;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 
 import com.sunflower.mydemo.R;
-import com.sunflower.mydemo.fragment.DrawerFragment;
+import com.sunflower.mydemo.ui.fragment.DrawerFragment;
 
 public class DrawerLayoutDemoActivity extends AppCompatActivity {
 

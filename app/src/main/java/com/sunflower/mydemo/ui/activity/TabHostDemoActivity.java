@@ -1,4 +1,4 @@
-package com.sunflower.mydemo.activity;
+package com.sunflower.mydemo.ui.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTabHost;
@@ -10,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sunflower.mydemo.R;
-import com.sunflower.mydemo.fragment.FirstFragment;
-import com.sunflower.mydemo.fragment.SecendFragment;
-import com.sunflower.mydemo.fragment.ThreeFragment;
+import com.sunflower.mydemo.ui.fragment.FirstFragment;
+import com.sunflower.mydemo.ui.fragment.SecendFragment;
+import com.sunflower.mydemo.ui.fragment.ThreeFragment;
 
 /**
  * create 2015/12/30
