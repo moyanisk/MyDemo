@@ -1,7 +1,6 @@
 package com.sunflower.mydemo.ui.activity;
 
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.sunflower.mydemo.R;
+import com.sunflower.mydemo.adapter.MyViewPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +38,7 @@ public class ViewPagerDemoActivity extends AppCompatActivity {
             ImageView iv = new ImageView(this);
             iv.setLayoutParams(params);
             iv.setImageResource(pics[i]);
+            iv.setScaleType(ImageView.ScaleType.FIT_XY);
             views.add(iv);
         }
 
@@ -45,37 +46,6 @@ public class ViewPagerDemoActivity extends AppCompatActivity {
         vp_viewpager.setAdapter(adapter);
     }
 
-    class MyViewPagerAdapter extends PagerAdapter {
-        private List<View> views;
-
-        public MyViewPagerAdapter(List<View> _views) {
-            views = _views;
-        }
-
-        @Override
-        public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView(views.get(position));
-        }
-
-        @Override
-        public Object instantiateItem(ViewGroup container, int position) {
-            container.addView(views.get(position));
-            return views.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            if (views != null){
-                return views.size();
-            }
-            return 0;
-        }
-
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return view == object;
-        }
-    }
 
 
 }

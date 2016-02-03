@@ -34,8 +34,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.activity.ViewPagerDemoActivity">
-        </activity>
+        <activity android:name=".ui.activity.ViewPagerDemoActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.activity.VolleyDemoActivity">
         </activity>
         <activity android:name=".ui.activity.MaterialDesignDemoActivity"
