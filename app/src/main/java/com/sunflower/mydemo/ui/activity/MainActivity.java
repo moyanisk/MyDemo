@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
             new ActivityInfo("DrawerLayout Demo", DrawerLayoutDemoActivity.class),
             new ActivityInfo("Bitmap", BitmapCompressDemoActivity.class),
             new ActivityInfo("ViewPager", ViewPagerDemoActivity.class),
-            new ActivityInfo("Material Design", MaterialDesignDemoActivity.class)
+            new ActivityInfo("Material Design", MaterialDesignDemoActivity.class),
+            new ActivityInfo("Service Demo", ServiceDemoActivity.class),
+            new ActivityInfo("悬浮框设计", FloatViewActivity.class)
     );
 
 
