@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
             new ActivityInfo("ViewPager", ViewPagerDemoActivity.class),
             new ActivityInfo("Material Design", MaterialDesignDemoActivity.class),
             new ActivityInfo("Service Demo", ServiceDemoActivity.class),
-            new ActivityInfo("悬浮框设计", FloatViewActivity.class)
+            new ActivityInfo("悬浮框设计", FloatViewActivity.class),
+            new ActivityInfo("Toast示例", ToastShowActivity.class)
     );
 
 

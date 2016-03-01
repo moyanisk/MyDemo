@@ -28,4 +28,7 @@
     <string name="title_activity_bitmap_compress_demo">BitmapCompressDemoActivity</string>
     <string name="title_activity_material_design_demo">Material Design</string>
     <string name="service_status">Service Status:</string>
+    <string name="show_short_toast">Show 短 Toast</string>
+    <string name="show_long_toast">Show 长 Toast</string>
+    <string name="toast_view">自定义Toast的View</string>
 </resources>
