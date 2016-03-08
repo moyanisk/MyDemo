@@ -58,6 +58,10 @@
         </activity>
         <activity android:name=".ui.activity.ToastShowActivity">
         </activity>
+        <activity android:name=".ui.activity.FragmentDialogDemoActivity">
+        </activity>
+        <activity android:name=".ui.activity.FileOperationActivity">
+        </activity>
     </application>
 
 </manifest>
